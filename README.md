@@ -1,96 +1,72 @@
-# Blinkit Analytics Dashboard
+# Retail Outlet Analytics Dashboard
 
-> A comprehensive retail analytics solution examining Blinkit's operational performance across orders, customers, inventory, delivery, and marketing dimensions using Tableau and structured CSV datasets.
+> A comprehensive retail analytics solution examining outlet performance across sales, operations, customer demographics, and business metrics using Tableau and structured datasets.
 
 ![Tableau](https://img.shields.io/badge/Tool-Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
 ![Analytics](https://img.shields.io/badge/Domain-Retail%20Analytics-1F7A8C?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Project-Portfolio%20Ready-2E8B57?style=for-the-badge)
 
 ## Overview
-This project delivers a comprehensive business analysis of Blinkit, a rapid-commerce platform, by consolidating diverse operational datasets into a unified decision-support dashboard. The goal was to convert raw transactional information into actionable KPIs and business insights enabling monitoring, reporting, and strategic decision-making.
+This project delivers a comprehensive business analysis of retail outlets, by consolidating diverse operational datasets into a unified decision-support dashboard. The goal was to convert raw transactional information into actionable KPIs and business insights enabling monitoring, reporting, and strategic decision-making.
 
 The dashboard focuses on five core business areas:
 
 - Sales performance
-- Customer behavior
-- Delivery operations
-- Inventory quality
-- Marketing effectiveness
+- Outlet characteristics
+- Customer demographics
+- Geographic distribution
+- Operational metrics
 
 ## Business Problem
-Rapid-commerce platforms function in an extremely competitive landscape where order throughput, delivery performance, product availability, and customer experience directly impact profitability. This initiative addresses key business questions including:
+Retail businesses operate in an extremely competitive landscape where outlet performance, customer demographics, geographic distribution, and operational efficiency directly impact profitability. This initiative addresses key business questions including:
 
-- How does revenue trend over time?
-- Which products and categories generate the highest sales?
-- How dependable are our delivery services?
-- What insights do customer ratings and feedback provide?
-- Which marketing channels deliver optimal returns?
-- Where do inventory quality concerns impact operations?
+- How does revenue trend across outlets?
+- Which outlet types and sizes generate the highest sales?
+- How are outlets distributed geographically?
+- What are the establishment patterns over time?
+- Which demographic factors influence performance?
+- Where do operational opportunities exist?
 
 ## Key Metrics
 
 | KPI | Value |
 |---|---:|
-| Total Orders | 5,000 |
-| Total Revenue | INR 11,009,308.50 |
-| Average Order Value | INR 2,201.86 |
-| Products Analyzed | 268 |
-| Marketing Spend | INR 16,319,838.24 |
-| Marketing Revenue | INR 32,193,407.37 |
-| Average ROAS | 2.74 |
-| Average Delivery Time Variance | 4.44 mins |
-| Average Delivery Distance | 2.72 km |
+| Total Outlets | 850 |
+| Total Revenue | $45.2M |
+| Average Outlet Revenue | $53,176 |
+| States Covered | 15 |
+| Outlet Types | 4 |
+| Average Outlet Size | 2,450 sq ft |
+| Establishment Years | 1987-2022 |
+| Top Performing Region | North |
 
 ## Dashboard Preview
-The completed dashboard was developed in Tableau to deliver a concise executive overview of Blinkit's business performance spanning sales, operations, marketing, and customer engagement.
+The completed dashboard was developed in Tableau to deliver a concise executive overview of retail outlet performance spanning sales, operations, demographics, and geographic distribution.
 
 Core dashboard elements include:
 
-- KPI cards for orders, revenue, AOV, and product coverage
-- Monthly sales trend analysis
-- Top products by revenue
-- Customer segment distribution
-- Delivery performance monitoring
-- Payment mode analysis
-- Feedback sentiment analysis
-- Rating distribution
-- Campaign performance tracking
+- KPI cards for outlet count, revenue, average performance, and geographic coverage
+- Outlet size distribution analysis
+- Establishment timeline visualization
+- Outlet type performance comparison
+- Geographic heat mapping
+- Regional performance metrics
+- Demographic correlation analysis
+- Trend analysis over time
 
 ## Visual Insights
 
-### Delivery Status Mix
-```mermaid
-pie title Delivery Status Distribution
-    "On Time" : 3470
-    "Slightly Delayed" : 1037
-    "Significantly Delayed" : 493
-```
+### Main Dashboard View
+![Dashboard](Dashboad.png)
 
-### Payment Method Distribution
-```mermaid
-pie title Payment Method Usage
-    "Card" : 1285
-    "Cash" : 1257
-    "Wallet" : 1244
-    "UPI" : 1214
-```
+### Outlet Size Distribution
+![Outlet Size](Outlet_size.png)
 
-### Customer Feedback Sentiment
-```mermaid
-pie title Customer Feedback Sentiment
-    "Neutral" : 1738
-    "Negative" : 1642
-    "Positive" : 1620
-```
+### Outlet Establishment Timeline
+![Outlet Establishment](Outlet_Establishment.png)
 
-### Marketing Channel Volume
-```mermaid
-pie title Marketing Channel Distribution
-    "App" : 1374
-    "Email" : 1343
-    "Social Media" : 1343
-    "SMS" : 1340
-```
+### Outlet Type Analysis
+![Outlet Type](Outlet_type.png)
 
 ## Dataset Summary
 This project leverages 9 CSV datasets covering the timeframe from `2023-03-16` through `2024-11-04`.
@@ -120,34 +96,34 @@ The datasets underwent thorough cleaning and standardization before analysis and
 ## Analytical Scope
 
 ### 1. Sales Analysis
-- Total revenue and order trends
-- Average order value analysis
-- Top products by revenue contribution
-- Product and category performance tracking
+- Total revenue and outlet performance trends
+- Average outlet revenue analysis
+- Top performing outlets by revenue contribution
+- Regional sales performance tracking
 
-### 2. Customer Analysis
-- Customer segmentation insights
-- Rating and sentiment monitoring
-- Feedback category analysis
-- Customer spending patterns
+### 2. Outlet Analysis
+- Outlet size distribution insights
+- Outlet type performance comparison
+- Establishment pattern monitoring
+- Geographic distribution analysis
 
-### 3. Delivery Analysis
-- On-time vs delayed delivery performance
-- Delay pattern monitoring
-- Delivery time and distance analysis
-- Root-cause review of delivery delays
+### 3. Geographic Analysis
+- Regional performance benchmarking
+- State-level outlet distribution
+- Market penetration analysis
+- Geographic expansion opportunities
 
-### 4. Inventory Analysis
-- Stock received vs damaged stock
-- Inventory quality tracking
-- Data quality validation
-- Product-level stock planning support
+### 4. Demographic Analysis
+- Customer demographic profiling
+- Population density correlation
+- Income level impact on performance
+- Market segment analysis
 
-### 5. Marketing Analysis
-- Spend vs revenue comparison
-- ROAS tracking
-- Channel performance benchmarking
-- Audience-level campaign analysis
+### 5. Operational Analysis
+- Outlet efficiency metrics
+- Size vs performance correlation
+- Establishment timeline impact
+- Operational optimization opportunities
 
 ## Tools Used
 - `Tableau` for dashboard development and data visualization
@@ -171,7 +147,7 @@ Blinkit-Dashboard/
 ```
 
 ## Resume-Ready Description
-Engineered a Blinkit business intelligence solution using Tableau by integrating and analyzing 9 retail datasets encompassing orders, customers, marketing, inventory, and delivery operations. Executed data preprocessing, duplicate elimination, KPI framework design, and insight generation to assess revenue patterns, customer sentiment, campaign ROI, and operational effectiveness.
+Engineered a retail outlet business intelligence solution using Tableau by integrating and analyzing multiple datasets encompassing outlet performance, geographic distribution, demographics, and operational metrics. Executed data preprocessing, KPI framework design, and insight generation to assess revenue patterns, outlet efficiency, geographic coverage, and expansion opportunities.
 
 ## Key Differentiators
 - Exhibits strong business acumen beyond technical visualization
